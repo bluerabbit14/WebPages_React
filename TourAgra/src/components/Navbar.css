@@ -1,0 +1,120 @@
+.navbar {
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.navbar-logo {
+  color: #a8002d;
+  /* Maroon color from reference */
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: #444;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  font-family: 'Inter', sans-serif;
+}
+
+.nav-links:hover {
+  color: #a8002d;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-book {
+  background-color: #a8002d;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #8c0026;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.nav-icon-link {
+  color: #2c7c8c;
+  /* Teal color from reference icons */
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #2c7c8c;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.nav-icon-link:hover {
+  background-color: #2c7c8c;
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 1100px) {
+  .nav-menu {
+    display: none;
+    /* In a real app, you'd add a hamburger menu */
+  }
+
+  .navbar-container {
+    padding: 0 20px;
+  }
+}
